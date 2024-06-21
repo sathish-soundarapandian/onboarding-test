@@ -1,0 +1,8 @@
+site_name: Sathish Site
+site_description: Sathish Desc
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
