@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-sample-service
-  description: My Sample service.
+  name: my-sample-service-tarball
+  description: My Sample service tarball.
   tags: [my-sample]
   links:
     - title: Website
