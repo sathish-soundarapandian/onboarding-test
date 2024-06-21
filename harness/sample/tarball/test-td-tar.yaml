@@ -9,7 +9,7 @@ metadata:
       url: http://my-sample-website.com
   annotations:
     github.com/project-slug: my-sample-org/my-sample-repo
-    backstage.io/techdocs-ref: dir:../../
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
   owner: my-sample-team
