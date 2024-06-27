@@ -12,5 +12,6 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
+  owner: my-sample-team
   lifecycle: experimental
   system: my-sample-system
