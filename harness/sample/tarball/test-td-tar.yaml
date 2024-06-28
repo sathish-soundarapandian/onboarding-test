@@ -12,6 +12,6 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  owner: Unknown
+  owner: Sathish
   lifecycle: experimental
   system: my-sample-system
