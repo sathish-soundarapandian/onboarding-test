@@ -10,6 +10,7 @@ metadata:
   annotations:
     github.com/project-slug: sathish-soundarapandian/onboarding-test
     backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
 spec:
   type: Service
   owner: Sathish
