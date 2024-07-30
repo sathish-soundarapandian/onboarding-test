@@ -13,6 +13,7 @@ metadata:
     backstage.io/kubernetes-label-selector: 'app=idp-ui'
     jira/project-key: IDP
     pagerduty.com/service-id: PT5ED69
+    bugsnag.com/project-key: Harness/app.harness.io
 spec:
   type: Service
   owner: Sathish
