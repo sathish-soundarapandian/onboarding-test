@@ -1,0 +1,8 @@
+site_name: Sathish Site Github
+site_description: Sathish Desc Github
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
