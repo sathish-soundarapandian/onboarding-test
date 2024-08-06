@@ -1,0 +1,8 @@
+site_name: Sathish Site Harness
+site_description: Sathish Desc Harness
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
