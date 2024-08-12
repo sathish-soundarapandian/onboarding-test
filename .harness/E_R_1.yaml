@@ -1,0 +1,6 @@
+environment:
+  name: E_R_1
+  identifier: E_R_1
+  orgIdentifier: default
+  projectIdentifier: Shylaja_Test
+  type: PreProduction
