@@ -14,7 +14,7 @@ metadata:
     jira/project-key: IDP
     pagerduty.com/service-id: PT5ED69
     bugsnag.com/project-key: Harness/app.harness.io
-    jenkins.io/github-folder: "danf-test/test"
+    jenkins.io/github-folder: "HemanthTest"
 spec:
   type: Service
   owner: Sathish-github
