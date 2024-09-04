@@ -14,7 +14,7 @@ metadata:
     jira/project-key: IDP
     pagerduty.com/service-id: PT5ED69
     bugsnag.com/project-key: Harness/app.harness.io
-    jenkins.io/job-full-name: harness-idp-sathish-test
+    jenkins.io/job-full-name: harness-idp-sathish/harness-idp-sathish
 spec:
   type: Service
   owner: Sathish-github
