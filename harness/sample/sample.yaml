@@ -6,7 +6,7 @@ metadata:
   tags: [my-sample-github]
   links:
     - title: Website
-      url: http://my-sample-website.com
+      url: http://my-sample1-website.com
   annotations:
     github.com/project-slug: sathish-soundarapandian/onboarding-test
     backstage.io/techdocs-ref: dir:.
