@@ -18,6 +18,6 @@ metadata:
     sonarqube.org/project-key: portal_bazel_400
 spec:
   type: Service
-  owner: Sathish-github-1
+  owner: Sathish-github
   lifecycle: experimental-github
   system: my-sample-system-github
