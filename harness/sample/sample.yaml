@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: my-sample-service-github
   description: My Sample service github.
-  tags: [my-sample-github-yes21]
+  tags: [my-sample-github-yes22]
   links:
     - title: Website
       url: http://my-sample1-website.com
