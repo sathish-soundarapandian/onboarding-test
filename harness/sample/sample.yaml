@@ -15,7 +15,7 @@ metadata:
     pagerduty.com/service-id: PT5ED69
     bugsnag.com/project-key: Harness/app.harness.io
     jenkins.io/job-full-name: danf-test
-    sonarqube.org/project-key: portal_bazel_400
+    sonarqube.org/project-key: nextgenui
 spec:
   type: Service
   owner: Sathish-github
