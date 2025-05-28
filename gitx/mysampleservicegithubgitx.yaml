@@ -3,7 +3,7 @@ kind: Component
 type: service
 identifier: mysampleservicegithubgitx
 name: my-sample-service-github
-owner: Sathish-github
+owner: Sathish-github-Working
 spec:
   lifecycle: experimental-github
   dependsOn:
