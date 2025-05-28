@@ -1,0 +1,27 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: mysampleservicegithubgitx
+name: my-sample-service-github
+owner: Sathish-github
+spec:
+  lifecycle: experimental-github
+  dependsOn:
+  - component:account/my-sample-service-bb-server-sathish
+metadata:
+  description: My Sample service github v2.
+  annotations:
+    sonarqube.org/project-key: nextgenui
+    backstage.io/kubernetes-label-selector: app=idp-ui
+    github.com/project-slug: sathish-soundarapandian/onboarding-test
+    pagerduty.com/service-id: PT5ED69
+    bugsnag.com/project-key: Harness/app.harness.io
+    jenkins.io/job-full-name: danf-test
+    jira/project-key: IDP
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-location: url:https://github.com/sathish-soundarapandian/onboarding-test/tree/main/harness/sample/
+  links:
+  - title: Website
+    url: http://my-sample1-website.com
+  tags:
+  - my-sample-github
