@@ -9,7 +9,7 @@ spec:
   dependsOn:
   - component:account/my-sample-service-bb-server-sathish
 metadata:
-  description: My Sample service github v2.
+  description: My Sample service github v2 1.
   annotations:
     sonarqube.org/project-key: nextgenui
     backstage.io/kubernetes-label-selector: app=idp-ui
