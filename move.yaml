@@ -1,0 +1,17 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: my-sample-service-azure
+name: my-sample-service-azure
+owner: user:account/admin@harness.io
+spec:
+  lifecycle: experimental-azure
+  partOf:
+  - component:account/my-sample-service-bb-cloud
+  subcomponentOf: component:account/my-sample-service-bb-cloud
+  ownedBy:
+  - user:account/admin@harness.io
+metadata:
+  description: My Sample service azure.
+  tags:
+  - my-sample-azure-working
