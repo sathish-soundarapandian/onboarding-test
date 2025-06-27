@@ -12,6 +12,6 @@ spec:
   ownedBy:
   - user:account/admin@harness.io
 metadata:
-  description: My Sample service azure 4.
+  description: My Sample service azure 511.
   tags:
   - my-sample-azure-working
