@@ -20,8 +20,5 @@ metadata:
     jira/project-key: IDP
     backstage.io/techdocs-ref: dir:.
     backstage.io/source-location: url:https://github.com/sathish-soundarapandian/onboarding-test/tree/main/harness/sample/
-  links:
-  - title: Website
-    url: http://my-sample1-website.com
   tags:
   - my-sample-github
