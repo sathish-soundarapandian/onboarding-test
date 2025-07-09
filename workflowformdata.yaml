@@ -2,7 +2,7 @@ apiVersion: harness.io/v1
 kind: Workflow
 type: service
 identifier: infrapipelinetfcommunitymodulesinglechoicelistgitx
-name: Infra Pipeline TF community module single choice list test 1
+name: Infra Pipeline TF community module single choice list test 2
 owner: UAL_Harness_IDP_PlatformEngineer_DGG
 spec:
   output:
