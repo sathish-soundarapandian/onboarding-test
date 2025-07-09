@@ -1,0 +1,112 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: service
+identifier: infrapipelinetfcommunitymodulesinglechoicelistgitx
+name: Infra Pipeline TF community module single choice list
+owner: UAL_Harness_IDP_PlatformEngineer_DGG
+spec:
+  output:
+    links:
+    - title: Pipeline Details
+      url: ${{ steps.trigger.output.PipelineUrl }}
+  title: Harness Infra Pipeline Provisioner
+  parameters:
+  - title: Set the values from setContextData
+    properties:
+      userInfo:
+        title: Get User Information from Harness
+        description: Pick one of Harness
+        ui:field: SelectFieldFromApi
+        ui:options:
+          path: proxy/harness-api/ng/api/user/aggregate/FvlpOw6UTZqSzvGDuFZc7A
+          params:
+            accountIdentifier: H6rHO8vtQYKelD_wgjnMpA
+          valueSelector: roleName
+          arraySelector: data.roleAssignmentMetadata
+          setContextData:
+            roleScopeLevelValue: roleScopeLevel
+            resourceGroupIdentifierValue: resourceGroupIdentifier
+            resourceGroupNameValue: resourceGroupName
+      roleScopeLevelName:
+        title: Role Scope Level
+        readonly: true
+        description: roleScopeLevel for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.roleScopeLevelValue }}'
+      resourceGroupIdentifierName:
+        title: Resource Group Identifier
+        description: Resource Group Identifier for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.resourceGroupIdentifierValue }}'
+      resourceGroupNameName:
+        title: Resource Group Name
+        readonly: true
+        description: Resource Group Name for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.resourceGroupNameValue }}'
+  - title: Get the values from getContextData
+    properties:
+      roleScopeLevelName_getData:
+        title: Role Scope Level
+        readonly: true
+        description: roleScopeLevel for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.roleScopeLevelValue }}'
+      resourceGroupIdentifierName_getData:
+        title: Resource Group Identifier
+        readonly: true
+        description: Resource Group Identifier for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.resourceGroupIdentifierValue }}'
+      resourceGroupNameName_getData:
+        title: Resource Group Name
+        readonly: true
+        description: Resource Group Name for the user Role
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: '{{ formContext.resourceGroupNameValue }}'
+  steps:
+  - id: trigger
+    name: Creating Standardized Harness CI Pipeline For the Stack You Selected.
+    action: trigger:harness-custom-pipeline
+    input:
+      url: https://app.harness.io/ng/account/H6rHO8vtQYKelD_wgjnMpA/all/orgs/PlatformEngineering/projects/IDP/pipelines/CloudNextIDPCFBackup/pipeline-studio?storeType=INLINE
+      hidePipelineURLLog: false
+      inputset:
+        appCI: ${{ parameters.projectId | dump }}
+        techarea: ${{ parameters.techarea | dump }}
+        techstack: ${{ parameters.techstack | dump }}
+        S3props: ${{ parameters.S3 | dump }}
+        DBprops: ${{ parameters.DynamoDB | dump }}
+        Kinesisprops: ${{ parameters.Kinesis | dump }}
+        SQSprops: ${{ parameters.SQS | dump }}
+        SecretsManagerprops: ${{ parameters.SecretsManager | dump }}
+        SNSprops: ${{ parameters.SNS | dump }}
+        Lambdaprops: ${{ parameters.Lambda | dump }}
+        AppSyncprops: ${{ parameters.AppSync | dump }}
+        containerPlatform: ${{ parameters.containerPlatform | dump }}
+        appinfo: ${{ parameters.appinfo | dump }}
+        primaryRegion: ${{ parameters.primaryRegion | dump }}
+        featureBranch: ${{ parameters.featureBranch | dump }}
+        accountType: ${{ parameters.accountType | dump }}
+        target_group_config: ${{ parameters.target_group_config | dump }}
+      apikey: ${{ parameters.token }}
+      showOutputVariables: true
+metadata:
+  description: Automated workflow that provides self service capabilities to provision
+    pipeline with standardized harness template.
+  annotations:
+    backstage.io/source-location: url:https://github.com/United-Airlines-Org/EA.ENZ.Cloud3.0/tree/main/iac/templates/idp/
+  tags:
+  - hidden
